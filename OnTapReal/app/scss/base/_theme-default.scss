@@ -1,0 +1,67 @@
+/*
+ * Base structure
+ */
+
+body {
+    font-family: 'Roboto', sans-serif;   
+}
+
+.main {
+    overflow: hidden;
+    padding: 0 !important;
+    margin-left: 150px;
+    width: 100%;
+}
+
+@mixin a-link($white) {
+    color: $white;
+    transition: all .3s;
+
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.wrap {
+
+    &-heading {
+
+        @extend .d-flex;
+        @extend .justify-content-end;
+
+        &__title {
+            font-size: 2.25em;
+            margin: 20px 0;
+
+            @extend .mr-auto;
+        
+            a {
+                @include a-link($white);
+            }
+        }
+
+        &__icon {
+
+            @include a-link($white);
+
+            i {
+                font-size: 24px;
+                margin-top: 36px;
+            }
+        }
+
+        &__more {
+
+            @include a-link($white);
+            margin-top: 36px;
+        }
+
+        
+    }
+}
+
+.pading-md {
+    padding-right: 53px;
+    padding-left: 53px;
+}

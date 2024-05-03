@@ -1,0 +1,5 @@
+code là "php-c" là tạo snippet nhanh
+
+tạo id và id tự tăng => " ALTER TABLE user
+ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY FIRST;
+"
